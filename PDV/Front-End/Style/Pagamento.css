@@ -1,0 +1,117 @@
+/* Reset e Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Overlay ocupando a tela inteira com fundo semi-transparente */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Caixa Centralizada do Modal */
+.modal-pagamento {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.modal-pagamento h1 {
+    font-size: 1.4em;
+    color: #333;
+    text-align: center;
+}
+
+#valor-total {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.linha {
+    height: 1px;
+    background-color: #eee;
+    margin: 15px 0;
+}
+
+.modal-pagamento h2 {
+    font-size: 1em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+/* Grade de Opções de Pagamento */
+.formas-pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn-pagamento {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 14px;
+    font-size: 1.1em;
+    text-align: left;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.btn-pagamento:hover {
+    background-color: #eef1f3;
+    border-color: #3498db;
+    color: #3498db;
+}
+
+.btn-voltar {
+    background-color: transparent;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+    transition: background-color 0.2s;
+}
+
+.btn-voltar:hover {
+    background-color: #fdf2f2;
+}
+
+/* Botão de Finalização Conclusiva */
+.btn-confirmar {
+    width: 100%;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(39, 174, 96, 0.2);
+    transition: background-color 0.2s;
+}
+
+.btn-confirmar:hover {
+    background-color: #218c4e;
+}
